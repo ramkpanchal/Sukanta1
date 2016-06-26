@@ -1,16 +1,30 @@
 {% extends "base.html" %}
 {% block title %} Login {% endblock %}
 {% block head %} New User {% endblock %}
-{% block content%} 
 
-<form method = "post" action = "." > {% csrf_token %}
+{% block content %}  
+
+<% if form.errors %>
+<p> Your user name and password didn't match, please try again. </p>
+<% endif %>
+<%if next %>
+<% if user.is.authenticated %>
+<p> Please log into your account </p>
+<% else %>
+<p> please log in to access your account </p>
+<% endif %>
+<% endif %>
+
+<form method = "post" action = " url 'login" > {% csrf_token %}
 <table border = "0">
 <tr> <th><label for = "id_username">Username:</label></th></td>{{form.username}}</td></tr>
 <tr> <th><label for = "id_password">password:</label></th></td>{{form.password}}</td></tr>
 </table>
+
 <input type = "Submit" value = "Login" />
 <input type = "hidden" name = "next" value = "/ home" />
 </form>
-<a href = "/register"> Register </a> 
+
+<p><a href = "/register"> Register </a></p> 
 
 <% endblock %>
