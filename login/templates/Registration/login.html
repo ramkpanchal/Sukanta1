@@ -2,7 +2,6 @@
 {% block title %} Login {% endblock %}
 {% block head %} New User {% endblock %}
 {% block content%} 
-
 {% if form.errors %}
 <p> Your user name and password didn't match, please try again. </p>
 <% endif %>
@@ -14,4 +13,6 @@
 <input type = "Submit" value = "Login" />
 <input type = "hidden" name = "next" value = "/ home" />
 </form>
-<a href = "/register"> Register </a> <% endblock %>
+<a href = "/register"> Register </a> 
+
+<% endblock %>
