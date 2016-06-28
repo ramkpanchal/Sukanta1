@@ -1,10 +1,26 @@
 <html>
 <head>
-<title> Django login application| 
-{% block title %}{% endblock %}</title> 
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+   <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Django Login</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+        <li><a href = "/register" class="waves-effect waves-light btn"> Register </a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+          
+<title> Django Login Application|
+{% block title %}{% endblock %}</title>
 </head>
 <body>
-<h1> {% block head %} {% endblock %}</h1>
-{% block content%}{% endblock %}
+<h1> {% block head %}{% endblock %}</h1>
+{% block content %}{% endblock %}
 </body>
 </html>
