@@ -7,6 +7,7 @@ class RegistrationForm(forms.form):
 	username = forms.RegexField(regex=r'\w+$', widget=forms.TextInput(attrs=dict(required=true, max_length =30)), label= _("username"), error_messages ={'invalid'("please enter username")})
 	Email= forms.EmailField(widget=forms.TextInput(attrs=dict(required=true, max_length = 30)), lable= _("EmailId") )
 	password1= forms.CharField(widget=forms.TextInput(attrs=dict(required=true, max_length = 30, render_value = False)), lable= _("password1") )
+	password2= forms.CharField(widget=forms.TextInput(attrs=dict(required=true, max_length = 30, render_value = False)), lable= _("password2") )
 
 
 
