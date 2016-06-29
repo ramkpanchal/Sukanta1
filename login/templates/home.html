@@ -1,7 +1,51 @@
 {% extends "base.html" %}
 {% block title %} Welcome to Sukanta {% endblock %}
-{% block head %} Welcome to Sukanta {% endblock %}
+{% block head %} Welcome to Sukanta Thali {% endblock %}
 {% block content %}
 <p> Welcome {{user.username}} !!! </p>
+
+    	 
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="sukanta" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="video-container">
+        <iframe width="853" height="480" src="//www.youtube.com/embed/v=pY_k1VY4Xo0" frameborder="0" allowsmallscreen></iframe>
+      </div>
+         <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text"> welcome to Sukanta Thali, explore our business</h5>
+                <p class="grey-text text-lighten-4"> Come celebrate your birthday parties, engagement ceremonies, wedding ceremonies. we have amazing offers for you.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!"> contact us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"> birthday parties</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">engagement ceremony</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">wedding ceremony</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 <a href = "/logout/"> Logout </a>
 {% endblock %}
